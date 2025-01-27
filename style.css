@@ -1,0 +1,85 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif; /* Fallback font family */
+    text-align: center; /* Center-align text */
+    margin: 0; /* Remove default margin */
+    background-color: #FADADD; /* Set background color to light pink */
+}
+
+#container {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align items horizontally */
+    justify-content: center; /* Center-align items vertically */
+    height: 100vh; /* Make the container full viewport height */
+}
+
+#image-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#image-container-left, #image-container-right {
+    position: fixed;
+    top: 0;
+    width: 100px; /* Set the width of the side containers */
+    display: flex;
+    flex-direction: column; /* Align images vertically */
+    gap: 10px; /* Add space between images */
+}
+
+/* Left-side container */
+#image-container-left, 
+#image-container-right {
+    display: none; /* Initially hidden */
+}
+
+/* Style for the images */
+/* Style for the images */
+/* Initially hide the images */
+#image-container-left img,
+#image-container-right img {
+    visibility: hidden; /* Hide images initially */
+    width: 60px; /* Adjust size of images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Position the images in the corners */
+
+/* Top-left corner */
+#image-container-left img:first-of-type {
+    top: 20px; /* 20px from the top */
+    left: 20px; /* 20px from the left */
+}
+
+/* Bottom-left corner */
+#image-container-left img:nth-of-type(2) {
+    bottom: 20px; /* 20px from the bottom */
+    left: 20px; /* 20px from the left */
+}
+
+/* Top-right corner */
+#image-container-right img:first-of-type {
+    top: 20px; /* 20px from the top */
+    right: 20px; /* 20px from the right */
+}
+
+/* Bottom-right corner */
+#image-container-right img:nth-of-type(2) {
+    bottom: 20px; /* 20px from the bottom */
+    right: 20px; /* 20px from the right */
+}
+
+button {
+    padding: 10px 20px; /* Set padding for buttons */
+    margin: 0 10px; /* Set margin around buttons */
+    font-size: 26px; /* Set font size for buttons */
+    font-family: 'Sacramento', cursive; /* Apply Sacramento font to the options */
+    background-color: #FB607F; /* Set button background color */
+    color: white; /* Set text color to white */
+    border: none; /* Remove button border */
+    cursor: pointer; /* Set cursor to pointer on hover */
+}
